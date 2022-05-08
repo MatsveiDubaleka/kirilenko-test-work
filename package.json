@@ -1,0 +1,18 @@
+{
+  "name": "kirilenko-test-work",
+  "version": "1.0.0",
+  "description": "Test Work for Company Kirilenko",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "scss"
+  ],
+  "author": "Matsvei Dubaleka",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
