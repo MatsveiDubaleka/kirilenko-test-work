@@ -67,7 +67,7 @@ section {
       }
     }
     .header__contacts {
-      padding-top: 20px;
+      padding-top: 18px;
       @include flex-row();
       align-items: center;
       justify-content: space-between;
@@ -80,43 +80,55 @@ section {
           font-weight: 600;
           font-size: 12px;
           line-height: 12px;
-          letter-spacing: -0.5px;
+          letter-spacing: -0.9px;
           color: #ffffff;
           opacity: 0.5;
         }
         a {
           @include flex-row();
           gap: 9.5px;
-          margin-top: 10px;
+          margin-top: 8px;
           text-decoration: none;
           color: #fee040;
           font-size: 14px;
           line-height: 12px;
           letter-spacing: -0.5px;
+          &:hover {
+            transition: 0.5s;
+            color: #f5f5f5;
+          }
         }
       }
       .header__contacts-phone {
         @include flex-column();
-        align-items: flex-start;
+        align-items: flex-end;
         justify-content: flex-start;
 
         .phone-description {
+          opacity: 0.5;
           @include flex-row();
-          gap: 9.5px;
+          gap: 6.5px;
           text-decoration: none;
-          color: #fee040;
-          font-size: 14px;
+          font-size: 12px;
           line-height: 12px;
           letter-spacing: -0.5px;
+          p {
+            color: #fff;
+          }
         }
         a {
-          margin-top: 7px;
+          margin-top: 6px;
           font-weight: 700;
           font-size: 20px;
           line-height: 24px;
           text-align: right;
           text-decoration: none;
+          letter-spacing: 0.3px;
           color: #ffffff;
+          &:hover {
+            transition: 0.5s;
+            color: #fee040;
+          }
         }
       }
     }
@@ -125,6 +137,7 @@ section {
 
 // Burger menu
 .burger-menu {
+  margin-top: -6px;
   @include flex-column();
   gap: 8px;
   &:hover {
@@ -160,28 +173,36 @@ section {
   height: 70px;
   @include flex-row();
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background: #fee040;
   border-radius: 2px;
   font-weight: 800;
   font-size: 12px;
   line-height: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 0.4px;
   text-transform: uppercase;
   text-decoration: none;
-  gap: 12px;
+  text-align: center;
+  gap: 10px;
   color: #000000;
+  img {
+    padding-left: 58px;
+  }
+  &:hover {
+    transition: 0.5s;
+    background-color: #fff;
+  }
 }
 
 .independent {
-  padding-top: 160px;
-  padding-bottom: 70px;
+  padding-top: 207px;
+  padding-bottom: 63px;
   background-image: url(../assets/img/bg.jpg);
   @include flex-row();
   .wrapper {
     @include flex-column();
     .independent__content {
-      padding: 0 8%;
+      padding: 0 120px;
       @include flex-row();
       gap: 200px;
       justify-content: flex-start;
@@ -190,19 +211,21 @@ section {
         @include flex-column();
         h1 {
           margin: 0;
+          font-family: "Gilroy", sans-serif;
           font-weight: 800;
-          font-size: 32px;
+          font-size: 36px;
           line-height: 51px;
-          letter-spacing: -0.5px;
+          letter-spacing: -1.4px;
           color: #fff;
         }
         p {
-          margin-top: 38px;
-          padding-right: 20%;
+          margin-top: 35px;
+          padding-right: 40%;
           font-weight: 600;
           font-size: 20px;
           line-height: 34px;
           color: #fff;
+          letter-spacing: -0.5px;
           opacity: 0.7;
         }
       }
@@ -212,28 +235,30 @@ section {
         @include flex-column();
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 40px;
+        gap: 25px;
         p {
           font-weight: 400;
           font-size: 15px;
           line-height: 28px;
-          font-size: 200;
           font-family: "Proxima Nova Th", sans-serif;
           color: #ffffff;
         }
       }
     }
     .independent__features {
-      margin-top: 63px;
+      margin-top: 69px;
       @include flex-row();
-      justify-content: flex-end;
+      justify-content: flex-start;
       align-items: flex-end;
       .independent__features-list {
         @include flex-row();
+        // gap: 40px;
         .independent__features-item {
+          // margin-right: 100px;
           @include flex-row();
           gap: 31px;
           p {
+            // width: 200px;
             font-weight: 700;
             font-size: 20px;
             line-height: 28px;
@@ -249,13 +274,15 @@ section {
 .work {
   .wrapper {
     @include flex-row();
-    gap: 58px;
-    padding: 90px 0;
+    margin-top: 38px;
+    margin-bottom: 7px;
     .work__heading {
+      margin-top: -25px;
       width: 37%;
       @include flex-column();
       h2 {
         @include flex-column();
+        font-family: "Gilroy", sans-serif;
         align-items: flex-start;
         font-weight: 800;
         font-size: 32px;
@@ -275,10 +302,13 @@ section {
       }
     }
     .work__image > img {
-      width: 300px;
-      height: 295px;
+      padding-top: 20px;
+      width: 375px;
+      height: 399px;
     }
     .work__get {
+      margin-top: -36px;
+      margin-left: 60px;
       h3 {
         font-weight: 700;
         font-size: 24px;
@@ -287,7 +317,7 @@ section {
         color: #151515;
       }
       ul {
-        margin-top: 24px;
+        margin-top: 30px;
         @include flex-column();
         gap: 15px;
         align-items: flex-start;
@@ -304,7 +334,7 @@ section {
 .services {
   position: relative;
   padding-top: 100px;
-  padding-bottom: 70px;
+  padding-bottom: 145px;
   overflow: hidden;
   background-image: url(../assets/img/bg-commercy.jpg);
   .wrapper {
@@ -389,6 +419,10 @@ section {
             letter-spacing: 7px;
             color: #fee040;
             text-transform: uppercase;
+            &:hover {
+              transition: 0.5s;
+              color: #f5f5f5;
+            }
           }
         }
       }
@@ -403,16 +437,16 @@ section {
 .complex {
   .wrapper {
     padding-top: 104px;
-    padding-bottom: 100px;
+    padding-bottom: 103px;
     @include flex-column();
-    gap: 36px;
+    gap: 33px;
     h2 {
       font-weight: 700;
       font-size: 80px;
       font-family: "Bebas Neue", sans-serif;
       line-height: 64px;
       text-align: center;
-      letter-spacing: -1px;
+      letter-spacing: -5px;
       background: linear-gradient(
         180deg,
         #60b6ff 0%,
@@ -448,7 +482,7 @@ section {
       background-image: url(../assets/img/repeat.jpg);
     }
     .research__content {
-      width: 50%;
+      width: 32%;
       padding: 80px 0;
       padding-left: 70px;
       @include flex-column();
@@ -460,21 +494,26 @@ section {
         justify-content: flex-start;
         h3 {
           padding-left: 20px;
+          font-size: 24px;
+          letter-spacing: -1.2px;
         }
       }
       .research__content-paragraph {
-        margin-top: 25px;
+        margin-top: 23px;
+        padding-right: 70px;
         font-weight: 600;
         font-size: 18px;
         line-height: 26px;
-        letter-spacing: -0.5px;
+        letter-spacing: -1.05px;
         color: #333333;
         opacity: 0.7;
       }
       .research__content-quote {
-        margin-top: 32px;
+        margin-top: 36px;
         @include flex-row();
         gap: 30px;
+        justify-content: flex-start;
+        align-items: flex-start;
         .content__quote-img {
           img {
             border-radius: 50%;
@@ -488,7 +527,7 @@ section {
           align-items: flex-start;
           justify-content: flex-start;
           .content__quote-author {
-            margin-top: 21px;
+            margin-top: 33px;
             font-weight: 700;
             font-size: 16px;
             line-height: 26px;
@@ -504,7 +543,7 @@ section {
 }
 
 .step {
-  padding: 4px 10px;
+  padding: 2px 10px;
   background-color: #fee040;
   font-weight: 700;
   font-size: 16px;
@@ -515,7 +554,8 @@ section {
 }
 
 .instruments {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 112px;
   .wrapper {
     @include flex-column();
     align-items: center;
@@ -525,11 +565,11 @@ section {
       align-items: center;
       justify-content: center;
       h3 {
-        margin-top: 20px;
+        margin-top: 17px;
         font-weight: 700;
         font-size: 24px;
         line-height: 34px;
-        letter-spacing: -0.5px;
+        letter-spacing: -1.1px;
         color: #151515;
       }
       p {
@@ -547,29 +587,35 @@ section {
     .instruments__slider {
       overflow-y: scroll;
       width: 80vw;
-      padding-left: 4.1%;
+      padding-left: 57px;
       .instruments__slider-wrapper {
         position: relative;
-        margin-top: 109px;
+        margin-top: 112px;
         @include flex-row();
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 12px;
         width: 100vw;
         transform-origin: top left;
         scrollbar-width: none;
         .instruments__slider-item {
+          width: 357px;
+          padding: 0 41px;
           @include flex-column();
           align-items: center;
-          justify-content: center;
-          width: 340px;
-          max-width: 340px;
+          justify-content: flex-start;
+          // width: 340px;
+          // max-width: 340px;
           height: 357px;
           background: #f5f5f5;
+          &:hover {
+            transition: 0.5s;
+            background-color: #fee040;
+          }
           img {
-            margin-top: -50px;
-            margin-bottom: 10px;
-            height: 300px;
+            margin-top: -70px;
+            margin-bottom: -31px;
+            height: 380px;
           }
           p {
             width: 260px;
@@ -594,11 +640,14 @@ section {
   .wrapper {
     max-width: 1920px;
     @include flex-row();
+    align-items: flex-start;
     .processing__content {
+      // margin-top: 20px;
       width: 50%;
-      padding-left: 20%;
+      padding-left: 19.3%;
       padding-right: 4%;
       .processing__heading {
+        padding-top: 78px;
         @include flex-row();
         gap: 20px;
         h3 {
@@ -626,7 +675,9 @@ section {
         margin-top: 31px;
         ul {
           @include flex-column();
-          gap: 25px;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 16px;
           li {
             @include flex-row();
             gap: 20px;
@@ -653,14 +704,17 @@ section {
 }
 
 .termovision {
-  padding-top: 120px;
-  padding-bottom: 110px;
+  padding: 120px 0;
+  padding-bottom: 113px;
   background-image: url(../assets/img/complex.jpg);
   .wrapper {
     @include flex-row();
-    gap: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
     .termovision__heading {
       h2 {
+        width: 460px;
         font-family: "Gilroy", sans-serif;
         font-weight: 800;
         font-size: 32px;
@@ -676,21 +730,32 @@ section {
       }
     }
     .termovision__history {
+      // width: 460px;
+      padding-top: 9px;
       font-weight: 600;
       font-size: 18px;
       line-height: 28px;
       letter-spacing: -0.5px;
       color: #ffffff;
       @include flex-column();
-      gap: 20px;
+      gap: 26px;
       justify-content: space-between;
     }
     .termovision__commerce {
+      padding-top: 10px;
+      .btn {
+        position: relative;
+        .pointing-hand {
+          position: absolute;
+          bottom: 15px;
+          right: 13px;
+        }
+      }
       .termovisin__commerce-description {
         font-weight: 400;
         font-size: 15px;
         line-height: 28px;
-        margin-top: 30px;
+        margin-top: 34px;
         color: #ffffff;
       }
     }
@@ -716,6 +781,10 @@ section {
       color: #707070;
       a {
         color: #2f80ed;
+        &:hover {
+          transition: 0.5s;
+          color: #000;
+        }
       }
     }
     .footer__contacts {
@@ -745,6 +814,10 @@ section {
           line-height: 22px;
           color: #151515;
           text-decoration: none;
+          &:hover {
+            transition: 0.5s;
+            color: #fee040;
+          }
         }
       }
       .footer__contacts-phone {
@@ -766,6 +839,10 @@ section {
           line-height: 22px;
           color: #151515;
           text-decoration: none;
+          &:hover {
+            transition: 0.5s;
+            color: #fee040;
+          }
         }
       }
       .footer__contacts-address {
@@ -784,6 +861,10 @@ section {
           line-height: 22px;
           color: #151515;
           text-decoration: none;
+          &:hover {
+            transition: 0.5s;
+            color: #fee040;
+          }
         }
       }
     }
