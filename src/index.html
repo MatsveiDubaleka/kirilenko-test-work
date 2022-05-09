@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,7 +12,6 @@
     <!-- !!!ПРОВЕРИТЬ ВАЛИДАТОРОМ W3C -->
     <!-- !!Добавить HOVER / ACTIVE -->
     <!-- PIXEL PERFECT -->
-    <!-- !!!!ЗААБСОЛЮТИТЬ ХЕДЕР -->
     <header class="header">
       <div class="wrapper header-wrapper">
         <div class="header__nav">
@@ -131,50 +130,86 @@
             <p>Выполняем как комплексное так и отдельные виды работ</p>
           </div>
           <div class="services__content">
-            <div class="services__item">
+            <div class="services__item services__item-first">
               <img src="./assets/img/services/first.png" alt="House" />
               <h4>Общее обследование</h4>
-              <p>
+              <p class="services__item-description">
                 Экспертиза отдельных конструкций, обмерные работы, определение
                 прочности, расчет несущей способности и т.д.
               </p>
-              <a href="#">
+              <a class="btn-detailed" href="#">
                 <p>Подробнее</p>
                 <img src="./assets/svg/arrow.svg" alt="Follow arrow" />
               </a>
             </div>
-            <div class="services__item">
+            <div class="services__item services__item-second">
               <img src="./assets/img/services/second.png" alt="House" />
               <h4>Тепловизионная съемка</h4>
-              <p>
+              <p class="services__item-description">
                 Исследование системы отопления, вентиляции и кондиционирования,
                 а также оценка энергоэффективности здания
               </p>
-              <a href="#">
+              <a class="btn-detailed" href="#">
                 <p>Подробнее</p>
                 <img src="./assets/svg/arrow.svg" alt="Follow arrow" />
               </a>
             </div>
-            <div class="services__item">
+            <div class="services__item services__item-third">
               <img src="./assets/img/services/third.png" alt="House" />
               <h4>Телеинспекция инженерных сетей</h4>
-              <p>
+              <p class="services__item-description">
                 Цветная телевизионная съемка внутренней поверхности любых
                 протяженных объектов до 250 метров
               </p>
-              <a href="#">
+              <a class="btn-detailed" href="#">
                 <p>Подробнее</p>
                 <img src="./assets/svg/arrow.svg" alt="Follow arrow" />
               </a>
             </div>
-            <div class="services__item">
+            <div class="services__item services__item-fourth">
               <img src="./assets/img/services/fourth.png" alt="House" />
               <h4>Тахеометрическая съемка</h4>
-              <p>
+              <p class="services__item-description">
                 Построение чертежей при помощи лазера, который с точностью до
                 микрона определяет расположение объектов в пространстве
               </p>
-              <a href="#">
+              <a class="btn-detailed" href="#">
+                <p>Подробнее</p>
+                <img src="./assets/svg/arrow.svg" alt="Follow arrow" />
+              </a>
+            </div>
+            <div class="services__item services__item-first">
+              <img src="./assets/img/services/first.png" alt="House" />
+              <h4>Общее обследование</h4>
+              <p class="services__item-description">
+                Экспертиза отдельных конструкций, обмерные работы, определение
+                прочности, расчет несущей способности и т.д.
+              </p>
+              <a class="btn-detailed" href="#">
+                <p>Подробнее</p>
+                <img src="./assets/svg/arrow.svg" alt="Follow arrow" />
+              </a>
+            </div>
+            <div class="services__item services__item-second">
+              <img src="./assets/img/services/second.png" alt="House" />
+              <h4>Тепловизионная съемка</h4>
+              <p class="services__item-description">
+                Исследование системы отопления, вентиляции и кондиционирования,
+                а также оценка энергоэффективности здания
+              </p>
+              <a class="btn-detailed" href="#">
+                <p>Подробнее</p>
+                <img src="./assets/svg/arrow.svg" alt="Follow arrow" />
+              </a>
+            </div>
+            <div class="services__item services__item-third">
+              <img src="./assets/img/services/third.png" alt="House" />
+              <h4>Телеинспекция инженерных сетей</h4>
+              <p class="services__item-description">
+                Цветная телевизионная съемка внутренней поверхности любых
+                протяженных объектов до 250 метров
+              </p>
+              <a class="btn-detailed" href="#">
                 <p>Подробнее</p>
                 <img src="./assets/svg/arrow.svg" alt="Follow arrow" />
               </a>
@@ -198,7 +233,7 @@
           </div>
           <div class="research__content">
             <div class="research__content-title">
-              <span>Шаг №1</span>
+              <span class="step">Шаг №1</span>
               <h3>Подготовительные работы</h3>
             </div>
             <div class="research__content-paragraph">
@@ -210,12 +245,14 @@
                 <img src="./assets/img/author.png" alt="Alexey" />
               </div>
               <div class="content__quote-description">
-                “Задача этого этапа получить максимально полное представление о
-                конструкции здания, условиях его эксплуатации и возможных слабых
-                местах“
-              </div>
-              <div class="content__quote-author">
-                Алексей, обследователь и главный инженер проектов
+                <p>
+                  “Задача этого этапа получить максимально полное представление
+                  о конструкции здания, условиях его эксплуатации и возможных
+                  слабых местах“
+                </p>
+                <span class="content__quote-author">
+                  Алексей, обследователь и главный инженер проектов
+                </span>
               </div>
             </div>
           </div>
@@ -224,7 +261,7 @@
       <section class="instruments">
         <div class="wrapper">
           <div class="instruments__heading">
-            <span>Шаг 2</span>
+            <span class="step">Шаг №2</span>
             <h3>Детальное инструментальное обследование</h3>
             <p>
               Мы понимаем насколько важны сроки и сколько может стоить день
@@ -234,33 +271,46 @@
             </p>
           </div>
           <div class="instruments__slider">
-            <div class="instruments__slider-item">
-              <img src="./assets/img/instruments/first.png" alt="Profoscope" />
-              <p>Локатор арматуры “Profoscope”</p>
-            </div>
-            <div class="instruments__slider-item">
-              <img src="./assets/img/instruments/second.png" alt="ОНИКС-1" />
-              <p>Измеритель прочности бетона “ОНИКС-1”</p>
-            </div>
-            <div class="instruments__slider-item">
-              <img src="./assets/img/instruments/third.png" alt="ПУЛЬСАР-2" />
-              <p>Прибор ультразвукового действия “ПУЛЬСАР-2”</p>
-            </div>
-            <div class="instruments__slider-item">
-              <img
-                src="./assets/img/instruments/fourth.png"
-                alt="Молоток Шмидта"
-              />
-              <p>Измеритель прочности бетона “Молоток Шмидта”</p>
-            </div>
-            <div class="instruments__slider-item">
-              <img
-                src="./assets/img/instruments/fifth.png"
-                alt="“Profoscope”"
-              />
-              <p>Локатор арматуры “Profoscope”</p>
+            <div class="instruments__slider-wrapper">
+              <div class="instruments__slider-item">
+                <img
+                  src="./assets/img/instruments/first.png"
+                  alt="Profoscope"
+                />
+                <p>Локатор арматуры “Profoscope”</p>
+              </div>
+              <div class="instruments__slider-item">
+                <img src="./assets/img/instruments/second.png" alt="ОНИКС-1" />
+                <p>Измеритель прочности бетона “ОНИКС-1”</p>
+              </div>
+              <div class="instruments__slider-item">
+                <img src="./assets/img/instruments/third.png" alt="ПУЛЬСАР-2" />
+                <p>Прибор ультразвукового действия “ПУЛЬСАР-2”</p>
+              </div>
+              <div class="instruments__slider-item">
+                <img
+                  src="./assets/img/instruments/fourth.png"
+                  alt="Молоток Шмидта"
+                />
+                <p>Измеритель прочности бетона “Молоток Шмидта”</p>
+              </div>
+              <div class="instruments__slider-item">
+                <img
+                  src="./assets/img/instruments/first.png"
+                  alt="“Profoscope”"
+                />
+                <p>Локатор арматуры “Profoscope”</p>
+              </div>
+              <div class="instruments__slider-item">
+                <img
+                  src="./assets/img/instruments/first.png"
+                  alt="Profoscope"
+                />
+                <p>Локатор арматуры “Profoscope”</p>
+              </div>
             </div>
           </div>
+
           <div class="instruments__btns">
             <span></span><span></span><span></span><span></span>
           </div>
@@ -270,15 +320,13 @@
         <div class="wrapper">
           <div class="processing__content">
             <div class="processing__heading">
-              <span>Шаг №3</span>
+              <span class="step">Шаг №3</span>
               <h3>Обработка полученных данных</h3>
             </div>
             <div class="processing__article">
-              <article>
-                Детальный отчет с результатами обследования Вы получите через 7
-                дней. И на его основании сможете определить судьбу объекта и
-                прогнозировать затраты
-              </article>
+              Детальный отчет с <a href="#">результатами обследования</a> Вы
+              получите через 7 дней. И на его основании сможете определить
+              судьбу объекта и прогнозировать затраты
             </div>
             <div class="processing__list">
               <ul>
@@ -312,15 +360,15 @@
           </div>
         </div>
       </section>
-      <section class="complex">
+      <section class="termovision">
         <div class="wrapper">
-          <div class="complex__heading">
+          <div class="termovision__heading">
             <h2>
               Закажите комплексное обследование и получите тепловизионную съемку
               <span>в подарок</span>
             </h2>
           </div>
-          <div class="complex__history">
+          <div class="termovision__history">
             <p>
               Мы первая в Беларуси компания в составе которой есть
               аккредитованная тепловизионная лаборатория .
@@ -331,49 +379,50 @@
               выдержат стены.
             </p>
           </div>
-          <div class="complex__commerce">
-            <a href="#">
+          <div class="termovision__commerce">
+            <a href="#" class="btn">
               <img src="./assets/svg/download.svg" alt="Download" />
               <p>Получить коммерческое</p>
             </a>
-            <p>
+            <p class="termovisin__commerce-description">
               Отправьте техзадание и получите коммерческое предложение в течении
               15 минут
             </p>
           </div>
         </div>
       </section>
-      <section class="staff"></section>
+      <!-- <section class="staff"></section>
       <section class="cost"></section>
       <section class="reviews"></section>
-      <section class="price"></section>
+      <section class="price"></section> -->
     </main>
-    <footer>
+    <footer class="footer">
       <div class="wrapper">
         <div class="footer__author">
-          <p>
-            2016-2019 ООО "Инженерная Диагностика" Все права защищены. Бренд
-            упакован <a href="#">Digital Butlers</a>
-          </p>
+          <span>2016-2019 ООО "Инженерная Диагностика" </span>
+          <span>
+            Все права защищены. Бренд упакован
+            <a href="#">Digital Butlers</a></span
+          >
         </div>
         <div class="footer__contacts">
           <div class="footer__contacts-email">
-            <p>Пишите нам на email</p>
-            <a href="mailto:info@diagnistics.by"
-              ><img src="./assets/svg/mail.svg" alt="Email Logo" />
-              info@diagnistics.by
-            </a>
+            <span>
+              <img src="./assets/img/footer/email.svg" alt="Email Logo" />
+              Пишите нам на email
+            </span>
+            <a href="mailto:info@idi.by">info@idi.by</a>
           </div>
           <div class="footer__contacts-phone">
             <div class="phone-description">
-              <img src="./assets/svg/phone.svg" alt="Phone Logo" />
+              <img src="./assets/img/footer/phone.svg" alt="Phone Logo" />
               <p>Есть вопросы? Звоните!</p>
             </div>
             <a href="tel:+375294564545">+375 (29) 456-45-45 </a>
           </div>
           <div class="footer__contacts-address">
             <div class="phone-description">
-              <img src="./assets/svg/home.svg" alt="Home Logo" />
+              <img src="./assets/img/footer/home.svg" alt="Home Logo" />
               <p>Заходите в гости</p>
             </div>
             <a
