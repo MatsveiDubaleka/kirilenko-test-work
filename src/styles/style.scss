@@ -202,7 +202,7 @@ section {
   .wrapper {
     @include flex-column();
     .independent__content {
-      padding: 0 120px;
+      padding: 0 8.5%;
       @include flex-row();
       gap: 200px;
       justify-content: flex-start;
@@ -361,6 +361,7 @@ section {
         line-height: 42px;
         letter-spacing: -0.5px;
         color: #ffffff;
+        text-align: center;
       }
     }
     .services__content {
@@ -476,6 +477,7 @@ section {
     @include flex-row();
     align-items: flex-start;
     .research__image {
+      // max-width: 50%;
       width: 50%;
       height: 441px;
       background-repeat: no-repeat;
@@ -641,10 +643,12 @@ section {
     max-width: 1920px;
     @include flex-row();
     align-items: flex-start;
+    justify-content: flex-end;
     .processing__content {
       // margin-top: 20px;
-      width: 50%;
-      padding-left: 19.3%;
+      width: 29.8vw;
+      max-width: 60vw;
+      // padding-left: 19.3%;
       padding-right: 4%;
       .processing__heading {
         padding-top: 78px;
@@ -694,8 +698,11 @@ section {
       }
     }
     .processing__image {
-      width: 50%;
-      height: 512px;
+      width: 50vw;
+      height: 47.4vh;
+      // height: 100vh;
+      max-width: 960px;
+      // max-height: 512px;
       background-repeat: no-repeat;
       background-size: contain;
       background-image: url(../assets/img/processing-bg.jpg);
@@ -707,6 +714,7 @@ section {
   padding: 120px 0;
   padding-bottom: 113px;
   background-image: url(../assets/img/complex.jpg);
+  background-repeat: no-repeat;
   .wrapper {
     @include flex-row();
     justify-content: flex-start;
@@ -867,6 +875,106 @@ section {
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    padding: 3.5% 5%;
+    margin: 0;
+  }
+
+  .services {
+    padding: 0;
+  }
+
+  .independent {
+    .wrapper {
+      padding: 0;
+      .independent__content {
+        padding: 0;
+      }
+    }
+  }
+
+  .research {
+    .wrapper {
+      .research__image {
+        background-position: center;
+      }
+      .research__content {
+        width: 60vw;
+      }
+    }
+  }
+
+  .instruments {
+    padding-top: 0;
+    .wrapper {
+    }
+  }
+
+  .processing {
+    .wrapper {
+      padding: 5% 0;
+      align-items: center;
+      .processing__content {
+        width: 45vw;
+        .processing__heading {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .complex {
+    .wrapper {
+      padding: 50px 0;
+      h2 {
+        font-size: 42px;
+        letter-spacing: 0.5px;
+      }
+      p {
+        width: 100vw;
+      }
+    }
+  }
+
+  .work {
+    .wrapper {
+      flex-direction: column;
+      .work__heading {
+        width: 100%;
+      }
+    }
+  }
+
+  // .btn {
+  //   width: 20vw;
+  // }
+
+  .termovision {
+    padding: 0;
+    background-size: cover;
+    .wrapper {
+      align-items: flex-start;
+      .termovision__heading {
+        h2 {
+          width: auto;
+          font-size: 22px;
+        }
+      }
+      .termovision__history {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  .footer {
+    padding: 0;
+    .wrapper {
+      gap: 10vw;
     }
   }
 }

@@ -374,7 +374,7 @@ section {
 }
 
 .independent .wrapper .independent__content {
-  padding: 0 120px;
+  padding: 0 8.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,6 +681,7 @@ section {
   line-height: 42px;
   letter-spacing: -0.5px;
   color: #ffffff;
+  text-align: center;
 }
 
 .services .wrapper .services__content {
@@ -1146,11 +1147,14 @@ section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .processing .wrapper .processing__content {
-  width: 50%;
-  padding-left: 19.3%;
+  width: 29.8vw;
+  max-width: 60vw;
   padding-right: 4%;
 }
 
@@ -1240,8 +1244,9 @@ section {
 }
 
 .processing .wrapper .processing__image {
-  width: 50%;
-  height: 512px;
+  width: 50vw;
+  height: 47.4vh;
+  max-width: 960px;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(../assets/img/processing-bg.jpg);
@@ -1251,6 +1256,7 @@ section {
   padding: 120px 0;
   padding-bottom: 113px;
   background-image: url(../assets/img/complex.jpg);
+  background-repeat: no-repeat;
 }
 
 .termovision .wrapper {
@@ -1587,5 +1593,83 @@ section {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #fee040;
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    padding: 3.5% 5%;
+    margin: 0;
+  }
+  .services {
+    padding: 0;
+  }
+  .independent .wrapper {
+    padding: 0;
+  }
+  .independent .wrapper .independent__content {
+    padding: 0;
+  }
+  .research .wrapper .research__image {
+    background-position: center;
+  }
+  .research .wrapper .research__content {
+    width: 60vw;
+  }
+  .instruments {
+    padding-top: 0;
+  }
+  .processing .wrapper {
+    padding: 5% 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .processing .wrapper .processing__content {
+    width: 45vw;
+  }
+  .processing .wrapper .processing__content .processing__heading {
+    padding: 0;
+  }
+  .complex .wrapper {
+    padding: 50px 0;
+  }
+  .complex .wrapper h2 {
+    font-size: 42px;
+    letter-spacing: 0.5px;
+  }
+  .complex .wrapper p {
+    width: 100vw;
+  }
+  .work .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work .wrapper .work__heading {
+    width: 100%;
+  }
+  .termovision {
+    padding: 0;
+    background-size: cover;
+  }
+  .termovision .wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .termovision .wrapper .termovision__heading h2 {
+    width: auto;
+    font-size: 22px;
+  }
+  .termovision .wrapper .termovision__history {
+    padding-bottom: 20px;
+  }
+  .footer {
+    padding: 0;
+  }
+  .footer .wrapper {
+    gap: 10vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
