@@ -475,6 +475,13 @@ section {
           align-items: flex-end;
 }
 
+.independent .wrapper .independent__features .independent__features-video a > img {
+  width: 220px;
+  height: 220px;
+  max-width: 220px;
+  max-height: 220px;
+}
+
 .independent .wrapper .independent__features .independent__features-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -988,6 +995,7 @@ section {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #151515;
+  text-align: center;
 }
 
 .instruments {
@@ -1603,17 +1611,51 @@ section {
   .services {
     padding: 0;
   }
-  .independent .wrapper {
-    padding: 0;
+  .services .wrapper {
+    padding: 8% 0;
+  }
+  .services .wrapper .services__heading p {
+    font-size: 26px;
+  }
+  .services .wrapper .services__content {
+    padding-left: 60px;
+  }
+  .header .header-wrapper .header__nav {
+    gap: 30px;
+  }
+  .header .header-wrapper .header__contacts {
+    gap: 50px;
   }
   .independent .wrapper .independent__content {
     padding: 0;
+    gap: 0;
+  }
+  .independent .wrapper .independent__features {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .independent .wrapper .independent__features .independent__features-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
   }
   .research .wrapper .research__image {
     background-position: center;
   }
   .research .wrapper .research__content {
     width: 60vw;
+  }
+  .research .wrapper .research__content .research__content-paragraph {
+    padding: 0;
   }
   .instruments {
     padding-top: 0;
@@ -1647,7 +1689,11 @@ section {
             flex-direction: column;
   }
   .work .wrapper .work__heading {
+    margin: 0;
     width: 100%;
+  }
+  .btn {
+    width: 320px;
   }
   .termovision {
     padding: 0;
@@ -1670,6 +1716,232 @@ section {
   }
   .footer .wrapper {
     gap: 10vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .header-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .header-wrapper .header__nav {
+    width: 90vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .header-wrapper .header__contacts {
+    padding: 0;
+    width: 90vw;
+  }
+  .independent .wrapper {
+    padding-top: 0;
+  }
+  .independent .wrapper .independent__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .independent .wrapper .independent__content .independent__content-heading {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .independent .wrapper .independent__content .independent__content-heading h1 {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+  }
+  .independent .wrapper .independent__content .independent__content-heading p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
+  }
+  .independent .wrapper .independent__content .independent__content-commerce {
+    padding-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .independent .wrapper .independent__content .independent__content-commerce p {
+    text-align: center;
+  }
+  .independent .wrapper .independent__features {
+    margin-top: 30px;
+    gap: 50px;
+  }
+  .independent .wrapper .independent__features .independent__features-list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .independent .wrapper .independent__features .independent__features-list .independent__features-item img {
+    width: 35px;
+    height: 35px;
+  }
+  .work .wrapper {
+    margin: 0;
+  }
+  .work .wrapper .work__heading h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .work .wrapper .work__heading p {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .work .wrapper .work__image img {
+    width: 300px;
+    height: 300px;
+  }
+  .services .wrapper .services__heading p {
+    font-size: 18px;
+  }
+  .complex .wrapper {
+    gap: 0;
+  }
+  .complex .wrapper h2 {
+    font-size: 26px;
+  }
+  .complex .wrapper p {
+    font-size: 18px;
+  }
+  .research .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .research .wrapper .research__content {
+    width: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 40px;
+  }
+  .research .wrapper .research__content .research__content-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .research .wrapper .research__content .research__content-title h3 {
+    font-size: 20px;
+  }
+  .instruments {
+    padding-bottom: 30px;
+  }
+  .instruments .wrapper .instruments__heading h3 {
+    font-size: 20px;
+  }
+  .instruments .wrapper .instruments__heading p {
+    width: 90vw;
+  }
+  .processing .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .processing .wrapper .processing__content {
+    width: 100vw;
+    max-width: 90vw;
+    padding-bottom: 30px;
+  }
+  .processing .wrapper .processing__content .processing__heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .processing .wrapper .processing__image {
+    width: 90vw;
+    height: 54vh;
+  }
+  .termovision .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .termovision .wrapper .termovision__commerce {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3vw;
+  }
+  .footer .wrapper .footer__contacts {
+    gap: 20px;
+  }
+  .footer .wrapper .footer__contacts .footer__contacts-address a {
+    font-size: 14px;
+  }
+  .footer .wrapper .footer__contacts .footer__contacts-email a {
+    font-size: 14px;
+  }
+  .footer .wrapper .footer__contacts .footer__contacts-phone a {
+    font-size: 14px;
+  }
+  .btn {
+    width: 200px;
+  }
+  .btn img {
+    padding-left: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
